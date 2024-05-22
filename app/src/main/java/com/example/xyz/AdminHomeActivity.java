@@ -26,7 +26,7 @@ import com.google.gson.JsonObject;
 import java.util.ArrayList;
 
 public class AdminHomeActivity extends AppCompatActivity {
-CardView donor_request,update_blood,need_blood;
+CardView donor_request,update_blood,need_blood,donors_his;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +52,12 @@ CardView donor_request,update_blood,need_blood;
                 startActivity(new Intent(AdminHomeActivity.this,patient_request.class));
             }
         });
+        /*donors_his.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //startActivity(new Intent(AdminHomeActivity.this,donation_history.class));
+            }
+        });*/
     }
 
 

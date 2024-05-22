@@ -32,7 +32,7 @@ import java.util.Map;
 
 public class donordetails extends AppCompatActivity {
     static final  int REQUEST_CALL=1;
-TextView name,email,contact,health,blood,address,age,date,accept,reject;
+TextView name,email,contact,health,blood,address,age,date,accept,reject,add_dtls;
 ImageView call;
 String token;
     @Override
@@ -77,6 +77,14 @@ String token;
                 callButton();
             }
         });
+        /*add_dtls.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(donordetails.this,donation_history.class);
+                i.putExtra("contact",contact.getText());
+                startActivity(i);
+            }
+        });*/
 
     }
 

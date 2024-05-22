@@ -17,6 +17,13 @@
         android:theme="@style/Theme.Xyz"
         tools:targetApi="31">
         <activity
+            android:name=".donation_history"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".update_city"
             android:exported="false">
             <meta-data
